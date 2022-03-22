@@ -27,23 +27,21 @@ export default function Login() {
             layout="vertical"
           >
             <Form.Item
-              label="username"
-              name="username"
+              name="user"
               rules={[
                 { required: true, message: "Please input your username" },
               ]}
             >
-              <Input />
+              <Input placeholder="username" />
             </Form.Item>
 
             <Form.Item
-              label="password"
               name="password"
               rules={[
                 { required: true, message: "Please input your password" },
               ]}
             >
-              <Input.Password />
+              <Input.Password placeholder="pass" />
             </Form.Item>
 
             <Form.Item>

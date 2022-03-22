@@ -1,10 +1,16 @@
-import { Home, Login, Register } from "@views";
-import Room from "@views/rooms/rooms.views";
-import React, { useContext } from "react";
+import {
+  Home,
+  Login,
+  Register,
+  Room,
+  WatchList,
+  Friends,
+  Parties,
+} from "@views";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 export default function RoutesConfig() {
-  const isAuth = true;
+  const isAuth = false;
 
   return (
     <>
@@ -18,7 +24,10 @@ export default function RoutesConfig() {
         ) : (
           <>
             <Route index element={<Home />} />
-            <Route path="/room/:id" element={<Room />} />
+            <Route path="/watch-list" element={<WatchList />} />
+            <Route path="/friends" element={<Friends />} />
+            <Route path="/parties" element={<Parties />} />
+            <Route path="/parties/:id" element={<Room />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </>
         )}
