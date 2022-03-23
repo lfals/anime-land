@@ -5,5 +5,6 @@ import Room from "./parties/parties.views";
 import Register from "./register/register.view";
 import WatchList from "./watchList/watchList.view";
 import Parties from "./parties/parties.views";
+import Watch from "./watch/watch.view";
 
-export { Home, Login, Register, WatchList, Friends, Room, Parties };
+export { Home, Login, Register, WatchList, Friends, Room, Parties, Watch };

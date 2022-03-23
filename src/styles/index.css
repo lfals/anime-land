@@ -1,0 +1,4 @@
+.rc-virtual-list-holder-inner {
+  flex-wrap: wrap;
+  width: 300px;
+}

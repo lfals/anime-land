@@ -8,6 +8,7 @@ const aliasConfig = {
   "@components": path.resolve(__dirname, "./src/components"),
   "@contexts": path.resolve(__dirname, "./src/contexts"),
   "@helpers": path.resolve(__dirname, "./src/helpers"),
+  "@api": path.resolve(__dirname, "./src/api"),
 };
 
 export default aliasConfig;
